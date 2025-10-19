@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostDuckyy/UI-Libraries/main/Neverlose/source.lua"))()
--- Library:Toggle(Enum.KeyCode.RightCtrl)
+Library:Toggle(Enum.KeyCode.RightCtrl)
 
 local Window = Library:Window({
     text = "Window"
