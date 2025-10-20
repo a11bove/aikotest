@@ -956,8 +956,6 @@ coset:Slider(
     }
 )
 
-
-
 -- Section2:Input(
 --     {
 --         Text = "Lil Input",
