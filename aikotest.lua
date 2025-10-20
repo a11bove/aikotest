@@ -2,6 +2,25 @@ local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Rain-
 Library.Theme = "Starry Night"
 local Flags = Library.Flags
 
+game:GetService("Players").LocalPlayer.PlayerGui.Interface.FishingCatchFrame.TimingBar.SuccessArea:GetPropertyChangedSignal("Size"):Connect(function()
+    game:GetService("Players").LocalPlayer.PlayerGui.Interface.FishingCatchFrame.TimingBar.SuccessArea.Position = UDim2.new(0.5,0,0,0)
+    game:GetService("Players").LocalPlayer.PlayerGui.Interface.FishingCatchFrame.TimingBar.SuccessArea.Size = UDim2.new(1,0,1,0)
+end)
+
+local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
+
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Workspace = game:GetService("Workspace")
+local LocalPlayer = Players.LocalPlayer
+local Lighting = game:GetService("Lighting")
+local effect = Lighting:FindFirstChild("VibrantEffect")
+local vibrantEffect = Lighting:FindFirstChild("VibrantEffect")
+local RunService = game:GetService("RunService")
+
+Lighting.ClockTime = 14
+Lighting.GlobalShadows = false
+
 local Window = Library:Window(
     {
         Text = "Aiko Hub - 99 Nights in The Forest (v1.0.4)"
