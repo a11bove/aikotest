@@ -1,9 +1,8 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rain-Design/Unnamed/main/Library.lua"))()
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Rain-Design/Unnamed/main/Library.lua'))()
 Library.Theme = "Tokyo Night"
 local Flags = Library.Flags
 
-local Window =
-    Library:Window(
+local Window = Library:Window(
     {
         Text = "Aiko Hub - 99 Nights in The Forest (v1.0.4)"
     }
@@ -44,7 +43,6 @@ local alimentos = {
 }
 
 -- esp
-
 local ie = {
     "Bandage", "Bolt", "Broken Fan", "Broken Microwave", "Cake", "Carrot", "Chair", "Coal", "Coin Stack",
     "Cooked Morsel", "Cooked Steak", "Fuel Canister", "Iron Body", "Leather Armor", "Log", "MadKit", "Metal Chair",
@@ -54,8 +52,7 @@ local ie = {
 local me = {"Bunny", "Wolf", "Alpha Wolf", "Bear", "Cultist", "Crossbow Cultist", "Alien", "Alien Elite"}
 
 -- bring
-
- local junkItems = {"Tyre", "Bolt", "Broken Fan", "Broken Microwave", "Sheet Metal", "Old Radio", "Washing Machine", "Old Car Engine"}
+local junkItems = {"Tyre", "Bolt", "Broken Fan", "Broken Microwave", "Sheet Metal", "Old Radio", "Washing Machine", "Old Car Engine"}
 local selectedJunkItems = {}
 local fuelItems = {"Log", "Chair", "Coal", "Fuel Canister", "Oil Barrel"}
 local selectedFuelItems = {}
